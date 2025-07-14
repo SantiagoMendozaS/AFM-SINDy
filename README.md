@@ -49,23 +49,23 @@ The resulting equations are benchmarked against the Derjaguin–Muller–Toporov
 
 **Derjaguin–Muller–Toporov Case**:
 
-- **Run AFM_SINDy_lib_reduc_att_const_DMT.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
+- **AFM_SINDy_lib_reduc_att_const_DMT.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
   models using the DMT model with a hard sample when assuming non-contact constraints. When configured with an extensive number of candidate functions, this script helps identify which functions are more representative
   of the observed dynamics. Additionally, when employing a reduced candidate function library, the code can be modified to train and save multiple SINDy models, which can subsequently
   be utilized in the AIC Jupyter notebook files to determine the most suitable equation of motion for each AFM dynamical regime.  
 
-- **Run AFM_SINDy_lib_reduc_rep_const_DMT.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
+- **AFM_SINDy_lib_reduc_rep_const_DMT.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
   models using the DMT model with a hard sample when assuming contact constraints. When configured with an extensive number of candidate functions, this script helps identify which functions are more representative
   of the observed dynamics. Additionally, when employing a reduced candidate function library, the code can be modified to train and save multiple SINDy models, which can subsequently
   be utilized in the AIC Jupyter notebook files to determine the most suitable equation of motion for each AFM dynamical regime.
 
-- **Run AFM_SINDy_AIC_att_const_DMT.ipynb:** This Jupyter Notebook performs an Akaike Information Criterion (AIC) analysis to identify the model types that most accurately
+- **AFM_SINDy_AIC_att_const_DMT.ipynb:** This Jupyter Notebook performs an Akaike Information Criterion (AIC) analysis to identify the model types that most accurately
   replicate the validation data when using a DMT model on a hard surface, including both the phase space and tip–sample forces. It also highlights which models with less
   information loss appear most frequently across clusters in the computational domain of the training data. This specific notebook includes non-contact constraints, making
   it suitable for selecting the best equation of motion for the attractive interaction regime. Additionally, it estimates the intermolecular distance, which can be used later
   as a fixed parameter when training models under contact constraints.
 
-- **Run AFM_SINDy_AIC_rep_const_DMT.ipynb:** This Jupyter Notebook performs an Akaike Information Criterion (AIC) analysis to identify the model types that best replicate
+- **AFM_SINDy_AIC_rep_const_DMT.ipynb:** This Jupyter Notebook performs an Akaike Information Criterion (AIC) analysis to identify the model types that best replicate
   the validation data when using a DMT model on a hard surface, including both the phase space and the tip–sample force. It also highlights which models with less information
   loss appear most frequently across clusters in the computational domain of the training data. This notebook applies contact constraints, making it suitable for selecting the
   optimal equation of motion for the repulsive interaction regime once the equations for the attractive regime have also been identified. In addition, this notebook simulates
@@ -74,23 +74,28 @@ The resulting equations are benchmarked against the Derjaguin–Muller–Toporov
 
 **Derjaguin–Muller–Toporov with Kelvin–Voigt Case**:
 
-- **Run AFM_SINDy_lib_reduc_att_const_DMT_KV.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
+- **AFM_SINDy_lib_reduc_att_const_DMT_KV.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
   models using the DMT model with Kelvin-Voigt when assuming non-contact constraints. When configured with a substantial number of candidate functions, this script helps identify which functions are more representative
   of the observed dynamics. Additionally, when employing a reduced candidate function library, the code can be modified to train and save multiple SINDy models, which can subsequently
   be utilized in the AIC Jupyter notebook files to determine the most suitable equation of motion for each AFM dynamical regime.
 
-- **Run AFM_SINDy_lib_reduc_rep_const_DMT_KV.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
+- **AFM_SINDy_lib_reduc_rep_const_DMT_KV.py:** This Python script enables the implementation of a wide range of candidate functions to train multiple preliminary SINDy
   models using the DMT model with Kelvin-Voigt when assuming non-contact constraints. When configured with an extensive number of candidate functions, this script helps identify which functions are more representative
   of the observed dynamics. Additionally, when employing a reduced candidate function library, the code can be modified to train and save multiple SINDy models, which can subsequently
   be utilized in the AIC Jupyter notebook files to determine the most suitable equation of motion for each AFM dynamical regime.
 
-- **Run AFM_SINDy_AIC_att_const_DMT_KV.ipynb:** This Jupyter Notebook performs an Akaike Information Criterion (AIC) analysis to identify the model types that most accurately
+- **AFM_SINDy_AIC_att_const_DMT_KV.ipynb:** This Jupyter Notebook performs an Akaike Information Criterion (AIC) analysis to identify the model types that most accurately
   replicate the validation data when using a DMT model with Kelvin-Voigt, including both the phase space and tip–sample forces. It also highlights which models with less
   information loss appear most frequently across clusters in the computational domain of the training data. This specific notebook includes non-contact constraints, making
   it suitable for selecting the best equation of motion for the attractive interaction regime. Additionally, it estimates the intermolecular distance, which can be used later
   as a fixed parameter when training models under contact constraints.
 
-- **Run AFM_SINDy_AIC_rep_const_DMT_KV.ipynb:** This Python script enables the implementation of a diverse amount of candidate functions to train multiple preliminary SINDy
+- **AFM_SINDy_AIC_rep_const_DMT_KV.ipynb:** This Python script enables the implementation of a diverse amount of candidate functions to train multiple preliminary SINDy
   models using the DMT model with Kelvin-Voigt when assuming contact constraints. When configured with an extensive number of candidate functions, this script helps identify which functions are more representative
   of the observed dynamics. Additionally, when employing a reduced candidate function library, the code can be modified to train and save multiple SINDy models, which can subsequently
   be utilized in the AIC Jupyter notebook files to determine the most suitable equation of motion for each AFM dynamical regime.
+
+### Additional Files
+
+- **AFM_SINDy_algorithm_training.py & AFM_SINDy_algorithm_training.ipynb:** These Python scripts and Jupyter notebooks contain the functions used throughout this repository.
+  They are imported and executed automatically by the corresponding code files when needed.
