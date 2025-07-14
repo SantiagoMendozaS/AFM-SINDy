@@ -35,6 +35,9 @@ viscoelastic parameters and the transition point between attractive and repulsiv
    git clone https://github.com/your-repository-link
    cd your-repository-directory
 
+3. **Edit the directory path:**
+
+   To run the Jupyter notebooks, put all the codes in a single folder and update the path at the begining of each Jupyter notebook and Python file in the designated `path` code line. 
 
 ### Overview of Analyzed Cases
 
