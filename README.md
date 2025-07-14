@@ -1,9 +1,9 @@
 # Code for AFM-SINDy: Symbolic Regression for Tip–Sample Force Reconstruction in Dynamic AFM 
 
 This repository contains the implementation of AFM-SINDy, a tailored machine learning framework for reconstructing tip–sample interaction forces in dynamic atomic force microscopy (AFM).
-The method leverages the Sparse Identification of Nonlinear Dynamics (SINDy) algorithm to perform symbolic regression on time-domain AFM trajectories. It identifies the underlying non-smooth 
+The method implements the Sparse Identification of Nonlinear Dynamics (SINDy) algorithm to perform symbolic regression on time-domain AFM trajectories. It identifies the underlying non-smooth 
 and nonlinear interaction forces that govern tapping-mode dynamics. The approach is validated on synthetic data generated from a Derjaguin–Muller–Toporov Kelvin–Voigt model, successfully recovering 
-viscoelastic parameters and the transition point between attractive and repulsive regimes. This framework enables nanomechanical property extraction at the level of individual oscillation cycles.   
+viscoelastic parameters and the transition point between attractive and repulsive regimes.   
 
 ## Installation Guide
 
